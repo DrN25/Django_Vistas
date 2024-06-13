@@ -18,9 +18,12 @@ from django.contrib import admin
 from django.urls import path
 from inicio.views import myHomeView
 from inicio.views import anotherView
+from inicio.views import test1
+from inicio.views import test2
 
 urlpatterns = [
     path('', myHomeView, name = "Pagina de inicio"),
-    path('another/', anotherView, name = "Pagina de inicio"),
+    path('test1/', test1, name = "Pagina de Test 1"),
+    path('test2/', test2, name = "Pagina de Test 2"),
     path('admin/', admin.site.urls),
 ]

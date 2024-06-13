@@ -9,3 +9,9 @@ def myHomeView(request, *args, **kwargs):
 
 def anotherView(request):
     return render(request, "base.html", {})
+
+def test1(request):
+    return render(request, "Template1.html", {})
+
+def test2(request):
+    return render(request, "Template2.html", {})
