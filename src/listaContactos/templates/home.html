@@ -10,6 +10,12 @@
 		<h2>Con Templates</h2>
 		{{request.user}}
 		<br>
+		{{request.user.username}}
+		<br>
+		{{request.user.email}}
+		<br>
+		{{request.user.last_login}}
+		<br>
 		{{ request.user.is_authenticated }}
 		{% endblock %}
 	</body>
