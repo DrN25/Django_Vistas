@@ -4,9 +4,12 @@
 		<title>Template Prueba 1</title>
 	</head>
 	<body>
-        <center>
+		{% extends 'base.html' %}
+		{% block content %}
+		<center>
             <h1>Esta es una nueva plantilla</h1>
             <h2>Prueba 1</h2>
         </center>
+		{% endblock %}
 	</body>
 </hmtl>
